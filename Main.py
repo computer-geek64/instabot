@@ -8,7 +8,7 @@ import sys
 
 
 if "-l" in sys.argv:
-    username, password = sys.argv[sys.argv.index("-u") + 1].split(":")
+    username, password = sys.argv[sys.argv.index("-l") + 1].split(":")
 else:
     username = input("Username >> ")
     password = input("Password >> ")
