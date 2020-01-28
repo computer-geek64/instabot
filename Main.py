@@ -27,5 +27,5 @@ target_user = instaloader.Profile.from_username(instagram.context, target)
 followers = list(target_user.get_followers())
 followees = list(target_user.get_followees())
 
-no_follow_back = [x.username for x in followees if x not in followers and x.followers < 3000]
+no_follow_back = [x.username for x in followees if x not in followers and x.followers < 15000]
 print("\n".join(no_follow_back))
